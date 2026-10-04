@@ -1,0 +1,23 @@
+deps = [
+    {
+        isFeral = false;
+        name = "libcurl";
+        constraint = ">=8.21.0";
+        sha256 = "";
+        url = "";
+    },
+    {
+        isFeral = true;
+        name = "Progress";
+        constraint = ">=0.2.0,<0.3.0";
+        sha256 = "b5681871983b59c0e890bd7969c7b16e0a73ec02b9f8f89748bb6f83c5ee7a1d";
+        url = "https://github.com/Feral-Lang/LibProgress/archive/refs/tags/0.2.0.tar.gz";
+    },
+    {
+        isFeral = true;
+        sha256 = "ea621914b0966de40fea8acb712833525b9f2c36f0d5405192cd151b5ac78cdb";
+        url = "https://github.com/Feral-Lang/LibCurl/archive/refs/tags/0.2.0.tar.gz";
+        constraint = ">=0.2.0,<0.3.0";
+        name = "Curl";
+    }
+];

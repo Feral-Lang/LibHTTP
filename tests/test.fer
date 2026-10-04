@@ -1,0 +1,19 @@
+let io = import('std/io');
+let map = import('std/map');
+
+let http = import('http/http');
+
+#  GET test
+let resp = http.get('https://raw.githubusercontent.com/Feral-Lang/Feral/refs/heads/main/CMakeLists.txt').ok();
+io.println('-------------------------------------------------------------------------------------------------------------------------------');
+io.println('GET Response: ', resp.code, '\n', resp.body);
+io.println('-------------------------------------------------------------------------------------------------------------------------------');
+
+# POST test
+let headers = map.new('content-type', 'application/json');
+let resp = http.post('https://dlptest.com/api/http-post/', '{"note": "this is a note"}', headers = headers).ok();
+io.println('-------------------------------------------------------------------------------------------------------------------------------');
+io.println('POST Response: ', resp.code, '\n', resp.body);
+io.println('-------------------------------------------------------------------------------------------------------------------------------');
+
+# TODO: Something for Streaming GET test?

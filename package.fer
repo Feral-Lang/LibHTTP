@@ -1,0 +1,16 @@
+let vec = import('std/vec');
+let package = import('std/package');
+
+let configure = fn(info) {
+    let pkg = package.new(
+        'HTTP',
+        desc = 'A simple HTTP interface for GET/PUT/POST requests. Uses cURL internally.',
+        version = '0.1.0',
+        feral = '>=2.5.4',
+        author = vec.new('Chirag-Khandelwal <github@mail.chiragkh.me>')
+    );
+
+    pkg.requires('Curl', version = '~0.2.0', feral = true);
+
+    return feral.ok(pkg);
+};
