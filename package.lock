@@ -10,14 +10,14 @@ deps = [
         isFeral = true;
         name = "Progress";
         constraint = ">=0.2.0,<0.3.0";
-        sha256 = "b5681871983b59c0e890bd7969c7b16e0a73ec02b9f8f89748bb6f83c5ee7a1d";
+        sha256 = "11e338323e8d9a9809fc9b8842411ec722d1df2412a0c2228fd53f6b208850d3";
         url = "https://github.com/Feral-Lang/LibProgress/archive/refs/tags/0.2.0.tar.gz";
     },
     {
         isFeral = true;
-        sha256 = "ea621914b0966de40fea8acb712833525b9f2c36f0d5405192cd151b5ac78cdb";
-        url = "https://github.com/Feral-Lang/LibCurl/archive/refs/tags/0.2.0.tar.gz";
-        constraint = ">=0.2.0,<0.3.0";
+        sha256 = "206d0fe2c4e277a085e5abdae49f18ef18898a0bc18067d2e8f46b5790c6b18a";
+        url = "https://github.com/Feral-Lang/LibCurl/archive/refs/tags/0.2.1.tar.gz";
+        constraint = ">=0.2.1,<0.3.0";
         name = "Curl";
     }
 ];
